@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Box, Heading, Text, Spinner, Flex, Stack, Button, AlertDialog, AlertDialogBody, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogOverlay, useDisclosure, useToast, Grid } from '@chakra-ui/react';
-import { Map, Marker } from "pigeon-maps"
-import { deleteChain, deleteHotel, fetchChainDetail, fetchHotelDetail } from '../services/api';
-import { HotelChainDetails, HotelDetailProps } from '../constants/interfaces';
+import { deleteChain, fetchChainDetail } from '../services/api';
+import { HotelChainDetails } from '../constants/interfaces';
 import HotelCard from '../components/HotelCard';
 
 const HotelChainDetail: React.FC = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Text, Heading } from '@chakra-ui/react';
-import { HotelCardProps, HotelChainCardProps } from '../constants/interfaces';
+import { HotelChainCardProps } from '../constants/interfaces';
 
 
 const HotelChainCard: React.FC<HotelChainCardProps> = ({ hotelchain, onClick }) => {

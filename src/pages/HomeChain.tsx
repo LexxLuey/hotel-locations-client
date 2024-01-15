@@ -3,17 +3,13 @@ import React, { useState } from 'react';
 import {
     Box,
     Grid,
-    GridItem,
     Input,
-    Select,
-    Heading,
     HStack,
     Spinner,
     Flex,
 } from '@chakra-ui/react';
 import { useQuery } from 'react-query';
-import HotelCard from '../components/HotelCard';
-import { getHotelChains, getHotels } from '../services/api';
+import { getHotelChains } from '../services/api';
 import { useNavigate } from 'react-router-dom';
 import { HotelChain } from '../constants/interfaces';
 import HotelChainCard from '../components/HotelChainCard';
